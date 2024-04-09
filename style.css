@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Setting the default font for the body */
+body {
+  font-family: "Poppins", sans-serif; /* Using Poppins as the primary font */
+}
+
+/* Adding a background color to an element with class h-64 */
+.h-64 {
+  background: #eb3471; /* Background color */
+}
+
+/* Keyframe animation for scaling an element */
+@keyframes open {
+  0% {
+    transform: scale(0); /* Starting scale at 0 */
+  }
+  100% {
+    transform: scale(1); /* Scaling to 1 */
+  }
+}
+
+/* Styling the element with ID resultSection */
+#resultSection {
+  animation: open 0.5s linear; /* Applying the 'open' animation */
+  background-color: rgb(238, 217, 228); /* Background color */
+  border-radius: 20px; /* Border radius */
+}
+
+/* Styling for tables */
+table {
+  color: rgb(145, 0, 67); /* Text color */
+  font-weight: bold; /* Font weight */
+}
+tr {
+  border: 1px solid #eb3471;
+}
+
+/* Styling for h1 elements */
+h1 {
+  color: aliceblue; /* Text color */
+}
