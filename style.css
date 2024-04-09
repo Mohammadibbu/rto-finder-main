@@ -19,7 +19,7 @@ body {
     transform: scale(1); /* Scaling to 1 */
   }
 }
-
+/* s */
 /* Styling the element with ID resultSection */
 #resultSection {
   animation: open 0.5s linear; /* Applying the 'open' animation */
