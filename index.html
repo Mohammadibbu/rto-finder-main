@@ -13,34 +13,33 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Tailwind magic happens here -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-   
   </head>
 
   <body class="bg-gray-50">
-    <main>
+    <main class="fadeIn">
       <div class="h-64">
-        <ul class="uppercase font-bold flex space-x-4 justify-end p-5 text-xs">
+        <ul
+          class="uppercase font-bold flex space-x-4 justify-end p-5 text-xs"
+          style="color: rgba(9, 47, 105, 0.979)"
+        >
           <li class="hover:text-blue-500">
-            <a href="#" onclick="alert('Created by me.')">ABOUT</a>
+            <a href="#about" target="_self">ABOUT</a>
           </li>
           <li class="hover:text-blue-500">
-            <a href="#" onclick="alert('Work in progress....')"">Github</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
-        <div class="flex flex-col justify-center items-center space-y-5 py-5">
-          <h1 class="font-bold text-xl ">RTO Finder</h1>
-          <div class="relative">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              class="absolute top-1.5 left-2 right-0 text-gray-600"
-            >
+
+        <div class="container-2 slideInDown">
+          <h1 class="font-bold text-xl" style="color: rgba(9, 47, 105, 0.979)">
+            RTO Trouver
+          </h1>
+          <div class="search-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="svg">
               <path
                 fill="currentColor"
                 d="m19.6 21l-6.3-6.3q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l6.3 6.3ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
@@ -50,22 +49,46 @@
               type="search"
               placeholder="Search number plate eg.,TNXX"
               max-length="12"
-              class="text-sm pl-10 pr-5 py-2 rounded focus:outline-none uppercase placeholder:normal-case placeholder:tracking-normal tracking-widest"
+              class="search-bar"
             />
+            <button type="button" class="box-shadow" id="btn">Search</button>
           </div>
         </div>
       </div>
 
+      <div class="rto-img slideInRight" id="img">
+        <img
+          alt="rto"
+          loading="lazy"
+          width="150"
+          height="145"
+          decoding="async"
+          data-nimg="1"
+          style="
+            color: transparent;
+            width: 50%;
+            height: 100%;
+            min-width: 12rem;
+            max-width: 20vw;
+            display: block;
+          "
+          src="https://www.carinfo.app/_next/static/media/rtohero.5a19a173.svg"
+        />
+      </div>
+
       <!-- Result start -->
       <div
-        class="m-10 shadow p-3 rounded"
+        class="m-10 shadow p-3 rounded fadeIn"
         style="text-align: center; display: none; color: white; background: red"
         id="no_rec"
       >
         <span class="font-semibold anim"> No Record Found ! </span>
       </div>
 
-      <div class="bg-white m-10 shadow p-5 rounded hidden" id="resultSection">
+      <div
+        class="bg-white m-10 shadow p-5 rounded hidden fadeIn box-shadow"
+        id="resultSection"
+      >
         <span class="text-xs">Your Query: </span>
         <span class="font-semibold tracking-widest" id="query">TN12</span>
 
@@ -100,9 +123,160 @@
           </tbody>
         </table>
       </div>
+
       <!-- Result end -->
+      <main class="p-10 slideInUp">
+        <div class="rto-details box-shadow-2">
+          <div class="rto-img">
+            <img
+              alt="rto"
+              loading="lazy"
+              width="150"
+              height="145"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 50%;
+                height: 100%;
+                min-width: 12rem;
+                max-width: 20vw;
+                display: block;
+              "
+              src="https://www.carinfo.app/_next/static/media/whatRTO.f9a33caf.svg"
+            />
+          </div>
+
+          <div class="">
+            <div class="">
+              <h2 class="h-2">What is RTO Detail?</h2>
+            </div>
+            <div class="">
+              <p class="p-2">
+                “RC detail” refers to the specific information contained in the
+                Registration Certificate (RC) of a vehicle. The RC is a vital
+                document that serves as official proof of ownership and
+                registration for a vehicle. <br />Let's dive into the key
+                aspects of RC details:
+              </p>
+              <div class="">
+                <h3 class="h-3 sub-head">Owner's Information:</h3>
+                <p class="p-2">
+                  The RC includes details about the owner of the vehicle, such
+                  as their name, vehicle details, and many more.
+                </p>
+              </div>
+              <div class="">
+                <h3 class="h-3 sub-head">Registration Number:</h3>
+                <p class="p-2">
+                  A unique registration number is assigned to each vehicle by
+                  the relevant transport authority, and this is<br />
+                  a key element in the RC details.
+                </p>
+              </div>
+              <div class="">
+                <h3 class="h-3 sub-head">Insurance Information:</h3>
+                <p class="p-2">
+                  Some RCs include details related to the vehicle's insurance,
+                  such as the policy number and validity period.
+                </p>
+              </div>
+              <p class="p-2">
+                Understanding and verifying these RC details is essential for
+                legal compliance, facilitating transactions such as resale or
+                transfer of ownership, and ensuring that the vehicle's
+                documentation is accurate and up-to-date. The RC includes all
+                the vital information about a registered vehicle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-shadow-2 rto-details" id="about">
+          <div class="rto-img">
+            <img
+              alt="rto"
+              loading="lazy"
+              width="150"
+              height="145"
+              decoding="async"
+              data-nimg="1"
+              style="
+                color: transparent;
+                width: 50%;
+                height: 100%;
+                min-width: 12rem;
+                max-width: 20vw;
+                display: block;
+              "
+              src="https://www.carinfo.app/_next/static/media/whatRTO.f9a33caf.svg"
+            />
+          </div>
+          <h1 class="h-2">About RTO Finder</h1>
+          <p class="p-2">
+            RTO Finder is a web application designed to help users find
+            information about Regional Transport Offices (RTOs) based on their
+            vehicle number plate. Users can enter a vehicle number plate, and
+            the application retrieves information such as RTO ID, location,
+            type, and district.
+          </p>
+          <p class="mb-3">
+            The primary goal of RTO Finder is to provide a convenient and
+            efficient way for users to access RTO information, whether they need
+            it for vehicle registration, taxation, or other purposes.
+          </p>
+          <p class="mb-3">Key features of RTO Finder:</p>
+          <ul class="list-disc pl-5 mb-5">
+            <li>Instant access to RTO information</li>
+            <li>User-friendly interface for easy navigation</li>
+            <li>Accurate and up-to-date data retrieval</li>
+            <li>Responsive design for seamless use on various devices</li>
+          </ul>
+          <h2 class="text-xl font-bold mt-5 mb-3">About the Creator</h2>
+          <p class="mb-3">
+            RTO Finder is created by <i class="h-3">Ashu</i>,
+            <!-- a passionate
+            team of developers dedicated to creating innovative solutions for
+            everyday problems.-->
+            I strive to deliver high-quality applications that simplify tasks
+            and enhance user experiences.
+          </p>
+          <p class="mb-3">
+            <!--  As a team, we  -->
+            I believe in leveraging technology to make a positive impact on
+            people's lives. RTO Finder is one of my projects aimed at providing
+            valuable information to users in a fast and efficient manner.
+          </p>
+        </div>
+        <div class="rto-details box-shadow-2">
+          <h2 class="text-xl font-bold mt-5 mb-3" id="contact">Contact Us</h2>
+          <p class="mb-3">
+            If you have any questions, feedback, or suggestions regarding RTO
+            Finder, feel free to contact us:
+          </p>
+          <hr />
+          <ul class="list-disc pl-5 mb-5">
+            <li>
+              Email:
+              <a
+                href="mailto:ajinastar12@gmail.com?subject=Inquiry%20about%20RTO%20Finder&body=Hello%2C%0A%0AI%20visited%20the%20RTO%20Finder%20page%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Could%20you%20please%20provide%20me%20with%20additional%20information%3F%0A%0AThank%20you."
+                target="_blank"
+                onclick="return confirm('Would you like to contact us ? ')"
+                >ajinastar12@gmail.com</a
+              >
+            </li>
+            <li>Phone: +91 8270230605</li>
+          </ul>
+          <p class="text-sm">Thank you for using RTO Finder!</p>
+        </div>
+        <button id="myBtntop" style="display: none">&#8593;</button>
+      </main>
+      <footer class="bg-gray-800 text-white py-4 text-center">
+        <div class="container mx-auto">
+          <p>&copy; 2024 RTO Finder. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
 
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Recursive:wght@300..1000&family=Rubik+Glitch+Pop&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 /* Setting the default font for the body */
 body {
-  font-family: "Poppins", sans-serif; /* Using Poppins as the primary font */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Recursive", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* Adding a background color to an element with class h-64 */
 .h-64 {
-  background: #eb3471; /* Background color */
+  background: #27d4ff; /* Background color */
 }
 
 /* Keyframe animation for scaling an element */
@@ -19,24 +24,201 @@ body {
     transform: scale(1); /* Scaling to 1 */
   }
 }
-/* s */
+
 /* Styling the element with ID resultSection */
 #resultSection {
   animation: open 0.5s linear; /* Applying the 'open' animation */
-  background-color: rgb(238, 217, 228); /* Background color */
+  background-color: rgb(217, 238, 238); /* Background color */
   border-radius: 20px; /* Border radius */
 }
 
 /* Styling for tables */
 table {
-  color: rgb(145, 0, 67); /* Text color */
-  font-weight: bold; /* Font weight */
+  color: rgb(0, 143, 145); /* Text color */
+  font-weight: bold;
+  width: 100%;
+  border-collapse: collapse; /* Font weight */
+  transform: all 1s;
 }
-tr {
-  border: 1px solid #eb3471;
-}
+/* tr {
+  border: 1px solid #c21d54;
+} */
 
 /* Styling for h1 elements */
 h1 {
-  color: aliceblue; /* Text color */
+  color: rgb(3, 19, 34); /* Text color */
+}
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.search-bar {
+  padding: 5px 25px 10px 45px;
+  border-radius: 30px;
+  width: 300px;
+  outline: none;
+  font-weight: 400;
+  background-color: rgb(248, 247, 241);
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+::placeholder {
+  text-transform: lowercase;
+}
+
+.search-icon {
+  position: relative;
+  color: rgb(2, 13, 14);
+}
+.svg {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
+#btn {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  padding: 11px;
+  background-color: rgba(9, 47, 105, 0.979);
+  border-radius: 20px;
+  color: aliceblue;
+  margin-top: 10px;
+  font-weight: 400;
+}
+#btn:hover {
+  background-color: rgb(6, 34, 30);
+}
+.rto-details {
+  border: 2px solid rgb(247, 241, 234);
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  min-width: 350px;
+}
+.box-shadow {
+  box-shadow: 2px 4px 11px 0px rgba(9, 105, 105, 0.979);
+  transition: 0.6s;
+}
+.box-shadow-2 {
+  box-shadow: 2px 4px 11px 0px #27d4ff;
+  transition: 0.6s;
+}
+.h-2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.h-3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.sub-head {
+  color: #27d4ff;
+}
+.p-2 {
+  margin-top: 30px;
+  padding: 10px;
+  min-width: 30px;
+}
+.a {
+  display: flex;
+  flex-direction: row;
+}
+/* Add custom CSS animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to specific elements */
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slideInDown {
+  animation: slideInDown 1s ease-in-out;
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.slideInRight {
+  animation: slideInRight 1.5s ease-in-out;
+} /* Add custom CSS animations */
+#myBtntop {
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #16fcbf86;
+  color: rgba(0, 0, 0, 0.651);
+  cursor: pointer;
+  padding: 5px;
+  width: 40px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+  }
+  #btn {
+    right: 5px;
+  }
+  .about-details {
+    flex-direction: column;
+  }
+  #btn {
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    width: 100px;
+  }
 }
