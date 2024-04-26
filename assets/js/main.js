@@ -63,9 +63,13 @@ const searchRecord = async (value) => {
       recordFound.district;
   } else {
     norec.style.display = "block";
-    setTimeout(() => {
-      norec.style.display = "none";
-    }, 3000);
+    img.classList.add("hidden");
+
+    // setTimeout(() => {
+    //   img.classList.remove("hidden");
+
+    //   norec.style.display = "none";
+    // }, 3000);
 
     resultSectionEl.classList.add("hidden");
   }
@@ -86,9 +90,11 @@ inputEl.addEventListener("keyup", (e) => {
 inputEl.addEventListener("input", (e) => {
   resultSectionEl.classList.add("hidden");
   img.classList.remove("hidden");
+  norec.style.display = "none";
 });
 inputEl.addEventListener("focus", (e) => {
   inputEl.classList.add("box-shadow");
+  norec.style.display = "none";
 });
 inputEl.addEventListener("blur", (e) => {
   inputEl.classList.remove("box-shadow");

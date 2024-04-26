@@ -9,6 +9,13 @@ body {
   font-family: "Recursive", sans-serif;
   font-optical-sizing: auto;
 }
+#no_rec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
 
 /* Adding a background color to an element with class h-64 */
 .h-64 {
@@ -24,7 +31,9 @@ body {
     transform: scale(1); /* Scaling to 1 */
   }
 }
-
+.anim {
+  animation: open 0.5s linear; /* Applying the 'open' animation */
+}
 /* Styling the element with ID resultSection */
 #resultSection {
   animation: open 0.5s linear; /* Applying the 'open' animation */
