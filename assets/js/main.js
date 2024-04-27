@@ -50,8 +50,9 @@ const searchRecord = async (value) => {
   if (recordFound) {
     // record exist
     img.classList.add("hidden");
-    if (recordFound.bikeType === undefined) {
-      recordFound.bikeType = "-";
+    if (recordFound.VehicleType === undefined) {
+      resultSectionEl.querySelector("#bike_type").style.color = "#fda7a7";
+      recordFound.VehicleType = "Data Not Available";
     }
     resultSectionEl.classList.remove("hidden");
     norec.style.display = "none";
