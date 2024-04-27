@@ -10,9 +10,9 @@ body {
   font-optical-sizing: auto;
   background: linear-gradient(
     to top,
-    rgb(206, 241, 241),
-    rgb(245, 231, 241),
-    rgb(245, 245, 238)
+    rgb(223, 243, 243),
+    rgb(240, 235, 238),
+    rgb(255, 255, 249)
   );
 }
 #no_rec {
@@ -26,7 +26,7 @@ body {
 /* Adding a background color to an element with class h-64 */
 .h-64 {
   /* background: #27d4ff;  */
-  background: linear-gradient(to top, rgb(247, 242, 245), #27d4ff);
+  background: linear-gradient(to top, rgb(255, 249, 253), #27d4ff);
 }
 
 /* Keyframe animation for scaling an element */
