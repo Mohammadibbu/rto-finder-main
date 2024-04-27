@@ -50,15 +50,20 @@ const searchRecord = async (value) => {
   if (recordFound) {
     // record exist
     img.classList.add("hidden");
-
+    if (recordFound.bikeType === undefined) {
+      recordFound.bikeType = "-";
+    }
     resultSectionEl.classList.remove("hidden");
     norec.style.display = "none";
     resultSectionEl.querySelector("#query").innerText = value.toUpperCase();
-    resultSectionEl.querySelector("#rto_id").innerText = recordFound.id;
+    // resultSectionEl.querySelector("#rto_id").innerText = recordFound.id;
     resultSectionEl.querySelector("#rto_code").innerText = recordFound.code;
     resultSectionEl.querySelector("#rto_location").innerHTML =
       "<i>" + recordFound.location + "</i>";
     resultSectionEl.querySelector("#rto_type").innerText = recordFound.type;
+    resultSectionEl.querySelector("#bike_type").innerText =
+      recordFound.VehicleType;
+
     resultSectionEl.querySelector("#rto_district").innerText =
       recordFound.district;
   } else {
