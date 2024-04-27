@@ -51,7 +51,7 @@ const searchRecord = async (value) => {
     // record exist
     img.classList.add("hidden");
     if (recordFound.VehicleType === undefined) {
-      resultSectionEl.querySelector("#bike_type").style.color = "#fda7a7";
+      resultSectionEl.querySelector("#bike_type").style.color = "#bfbfbf";
       recordFound.VehicleType = "Data Not Available";
     }
     resultSectionEl.classList.remove("hidden");
