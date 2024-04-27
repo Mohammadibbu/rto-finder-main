@@ -996,7 +996,7 @@ const rtoData = [
   {
     id: 143,
     code: "TN31BD3159",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Dio",
     district: "Cuddalore",
@@ -1004,7 +1004,7 @@ const rtoData = [
   {
     id: 144,
     code: "TN31CC7636",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "suzuki Access 125",
     district: "Cuddalore",
@@ -1012,7 +1012,7 @@ const rtoData = [
   {
     id: 145,
     code: "TN31AH5210",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: undefined,
     district: "Cuddalore",
@@ -1020,7 +1020,7 @@ const rtoData = [
   {
     id: 146,
     code: "TN31FM6789",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: undefined,
     district: "Cuddalore",
@@ -1028,7 +1028,7 @@ const rtoData = [
   {
     id: 147,
     code: "TN31CC0064",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Dio",
     district: "Cuddalore",
@@ -1036,7 +1036,7 @@ const rtoData = [
   {
     id: 148,
     code: "TN31AC1353",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Splendor +",
     district: "Cuddalore",
@@ -1044,7 +1044,7 @@ const rtoData = [
   {
     id: 149,
     code: "TN31CH1311",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Classic 350",
     district: "Cuddalore",
@@ -1052,7 +1052,7 @@ const rtoData = [
   {
     id: 150,
     code: "TN31CA7236",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Pleasure",
     district: "Cuddalore",
@@ -1060,7 +1060,7 @@ const rtoData = [
   {
     id: 151,
     code: "TN31CC7536",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Access 125 Disc",
     district: "Cuddalore",
@@ -1068,7 +1068,7 @@ const rtoData = [
   {
     id: 152,
     code: "TN31CC0121",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "Splendor",
     district: "Cuddalore",
@@ -1076,7 +1076,7 @@ const rtoData = [
   {
     id: 153,
     code: "TN31CC0345",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "SP 125 DRUM",
     district: "Cuddalore",
@@ -1084,7 +1084,7 @@ const rtoData = [
   {
     id: 154,
     code: "TN31BC5711",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "TVS XL Super 70",
     district: "Cuddalore",
@@ -1092,7 +1092,7 @@ const rtoData = [
   {
     id: 155,
     code: "TN31AH1111",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "MAH XUV 500 FWD",
     district: "Cuddalore",
@@ -1100,7 +1100,7 @@ const rtoData = [
   {
     id: 154,
     code: "TN31BC5711",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "TVS XL Super 70",
     district: "Cuddalore",
@@ -1108,7 +1108,7 @@ const rtoData = [
   {
     id: 155,
     code: "TN31CC0010",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "DZIRE VXI",
     district: "Cuddalore",
@@ -1116,7 +1116,7 @@ const rtoData = [
   {
     id: 156,
     code: "TN31AC2345",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: "TATA SUMO VICTA GX",
     district: "Cuddalore",
@@ -1124,7 +1124,7 @@ const rtoData = [
   {
     id: 157,
     code: "TN31CS9505",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: undefined,
     district: "Cuddalore",
@@ -1132,7 +1132,7 @@ const rtoData = [
   {
     id: 158,
     code: "TN31CB2827",
-    location: "SN Chavadi",
+    location: "SN Chavadi (Cuddalore)",
     type: "RTO",
     VehicleType: undefined,
     district: "Cuddalore",
