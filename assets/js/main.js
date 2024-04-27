@@ -101,6 +101,7 @@ inputEl.addEventListener("input", (e) => {
 inputEl.addEventListener("focus", (e) => {
   inputEl.classList.add("box-shadow");
   norec.style.display = "none";
+  img.classList.remove("hidden");
 });
 inputEl.addEventListener("blur", (e) => {
   inputEl.classList.remove("box-shadow");
